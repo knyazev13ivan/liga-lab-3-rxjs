@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SwListComponent } from './components/sw-list/sw-list.component';
-import { SwCardComponent } from './components/sw-card/sw-card.component';
-import { SearchComponent } from './components/search/search.component';
+import { SwListComponent } from './sw-list/sw-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SwListComponent,
-    SwCardComponent,
-    SearchComponent
+    SwListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
